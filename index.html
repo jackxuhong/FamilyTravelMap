@@ -25,7 +25,19 @@ function initMap() {
   // The map, centered at Markham
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 4, center: markham});
-
+  
+  const wish = {
+    url: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+    size: new google.maps.Size(20, 32),
+    origin: new google.maps.Point(0, 0),
+    anchor: new google.maps.Point(0, 32)
+  };
+  /*
+  const wishShape = {
+    coords: [1, 1, 1, 20, 18, 20, 18, 1],
+    type: "poly"
+  } as google.maps.MarkerShapePoly;
+  */
   var toronto = new google.maps.Marker({position: new google.maps.LatLng(43.642613, -79.387057), map: map, title: "Toronto"});
   var ottawa = new google.maps.Marker({position: new google.maps.LatLng(45.423805, -75.698694), map: map, title: "Ottawa"});
   var montreal = new google.maps.Marker({position: new google.maps.LatLng(45.507189, -73.587411), map: map, title: "Montreal"});
@@ -56,6 +68,8 @@ function initMap() {
   var shenzhen = new google.maps.Marker({position: new google.maps.LatLng(22.534577, 113.986063), map: map, title: "深圳 Shenzhen"});
   
   var bangkok = new google.maps.Marker({position: new google.maps.LatLng(13.752404, 100.490916), map: map, title: "Bangkok"});
+
+  var stockholm = new google.maps.Marker({position: new google.maps.LatLng(59.326934, 18.071692), map: map, title: "Stockholm", icon: wish});
   
 }
     </script>
