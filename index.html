@@ -38,27 +38,7 @@
         scale: 0.06
       };
 
-      var toronto = new google.maps.Marker({ position: new google.maps.LatLng(43.642613, -79.387057), map: map, title: "Toronto" });
-      var ottawa = new google.maps.Marker({ position: new google.maps.LatLng(45.423805, -75.698694), map: map, title: "Ottawa" });
-      var montreal = new google.maps.Marker({ position: new google.maps.LatLng(45.507189, -73.587411), map: map, title: "Montreal" });
-      var quebeccity = new google.maps.Marker({ position: new google.maps.LatLng(46.807836, -71.206894), map: map, title: "Quebec City" });
-      var halifax = new google.maps.Marker({ position: new google.maps.LatLng(44.647517, -63.579606), map: map, title: "Halifax" });
-
-      var la = new google.maps.Marker({ position: new google.maps.LatLng(34.102263, -118.340885), map: map, title: "LA" });
-      var miami = new google.maps.Marker({ position: new google.maps.LatLng(25.761225, -80.190835), map: map, title: "Miami" });
-      var phoenix = new google.maps.Marker({ position: new google.maps.LatLng(33.451697, -112.067400), map: map, title: "Phoenix" });
-      var deathvalley = new google.maps.Marker({ position: new google.maps.LatLng(36.464078, -116.866939), map: map, title: "Death Valley" });
-      var grandcanyon = new google.maps.Marker({ position: new google.maps.LatLng(36.198492, -112.052491), map: map, title: "Grand Canyon North Rim" });
-      var keywest = new google.maps.Marker({ position: new google.maps.LatLng(24.545593, -81.810984), map: map, title: "Key West" });
-
-      var cayman = new google.maps.Marker({ position: new google.maps.LatLng(19.333977, -81.381708), map: map, title: "Cayman Islands" });
-
-      var london = new google.maps.Marker({ position: new google.maps.LatLng(51.500921, -0.124597), map: map, title: "London" });
-      var rome = new google.maps.Marker({ position: new google.maps.LatLng(41.898764, 12.476854), map: map, title: "Rome" });
-      var florence = new google.maps.Marker({ position: new google.maps.LatLng(43.767873, 11.255270), map: map, title: "Florence" });
-      var pisa = new google.maps.Marker({ position: new google.maps.LatLng(43.722991, 10.396608), map: map, title: "Pisa" });
-      var venice = new google.maps.Marker({ position: new google.maps.LatLng(45.433378, 12.330536), map: map, title: "Venice" });
-
+      /* China */
       var tianjin = new google.maps.Marker({ position: new google.maps.LatLng(39.356563, 117.366918), map: map, title: "天津 Tianjin" });
       var beijin = new google.maps.Marker({ position: new google.maps.LatLng(39.917202, 116.390720), map: map, title: "北京 Beijing" });
       var shanghai = new google.maps.Marker({ position: new google.maps.LatLng(31.227581, 121.492112), map: map, title: "上海 Shanghai" });
@@ -67,9 +47,35 @@
       var shantou = new google.maps.Marker({ position: new google.maps.LatLng(23.366640, 116.717828), map: map, title: "汕头 Shantou" });
       var shenzhen = new google.maps.Marker({ position: new google.maps.LatLng(22.534577, 113.986063), map: map, title: "深圳 Shenzhen" });
 
-      var bangkok = new google.maps.Marker({ position: new google.maps.LatLng(13.752404, 100.490916), map: map, title: "Bangkok" });
+      /* Canada */
+      var toronto = new google.maps.Marker({ position: new google.maps.LatLng(43.642613, -79.387057), map: map, title: "Toronto" });
+      var ottawa = new google.maps.Marker({ position: new google.maps.LatLng(45.423805, -75.698694), map: map, title: "Ottawa" });
+      var montreal = new google.maps.Marker({ position: new google.maps.LatLng(45.507189, -73.587411), map: map, title: "Montreal" });
+      var quebeccity = new google.maps.Marker({ position: new google.maps.LatLng(46.807836, -71.206894), map: map, title: "Quebec City" });
+      var halifax = new google.maps.Marker({ position: new google.maps.LatLng(44.647517, -63.579606), map: map, title: "Halifax" });
+
+      /* USA */
+      var la = new google.maps.Marker({ position: new google.maps.LatLng(34.102263, -118.340885), map: map, title: "LA" });
+      var miami = new google.maps.Marker({ position: new google.maps.LatLng(25.761225, -80.190835), map: map, title: "Miami" });
+      var phoenix = new google.maps.Marker({ position: new google.maps.LatLng(33.451697, -112.067400), map: map, title: "Phoenix" });
+      var deathvalley = new google.maps.Marker({ position: new google.maps.LatLng(36.464078, -116.866939), map: map, title: "Death Valley" });
+      var grandcanyon = new google.maps.Marker({ position: new google.maps.LatLng(36.198492, -112.052491), map: map, title: "Grand Canyon North Rim" });
+      var keywest = new google.maps.Marker({ position: new google.maps.LatLng(24.545593, -81.810984), map: map, title: "Key West" });
+
+      /* Other Caribbean countries */
+      var cayman = new google.maps.Marker({ position: new google.maps.LatLng(19.333977, -81.381708), map: map, title: "Cayman Islands" });
+
+      /* Europe */
+      var london = new google.maps.Marker({ position: new google.maps.LatLng(51.500921, -0.124597), map: map, title: "London" });
+      var rome = new google.maps.Marker({ position: new google.maps.LatLng(41.898764, 12.476854), map: map, title: "Rome" });
+      var florence = new google.maps.Marker({ position: new google.maps.LatLng(43.767873, 11.255270), map: map, title: "Florence" });
+      var pisa = new google.maps.Marker({ position: new google.maps.LatLng(43.722991, 10.396608), map: map, title: "Pisa" });
+      var venice = new google.maps.Marker({ position: new google.maps.LatLng(45.433378, 12.330536), map: map, title: "Venice" });
 
       var paris = new google.maps.Marker({ position: new google.maps.LatLng(48.858424, 2.294477), map: map, title: "Paris", icon: heart });
+
+      /* Other Asian countries */
+      var bangkok = new google.maps.Marker({ position: new google.maps.LatLng(13.752404, 100.490916), map: map, title: "Bangkok" });
 
     }
   </script>
