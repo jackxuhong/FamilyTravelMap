@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body, html {
+          height: 100%;
+          width: 100%;
+          margin: 0px;
+      }
+      
+      #map {
+        height: 100%;
+        width: 100%;
+       }
+    </style>
+    <title>洪家旅行地图 - Hong Family Travel Map</title>
+  </head>
+  <body>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  var markham = {lat: 43.856709, lng: -79.344515}
+  // The map, centered at Markham
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: markham});
+
+  var toronto = new google.maps.Marker({position: new google.maps.LatLng(43.642613, -79.387057), map: map, title: "Toronto"});
+  var ottawa = new google.maps.Marker({position: new google.maps.LatLng(45.423805, -75.698694), map: map, title: "Ottawa"});
+  var montreal = new google.maps.Marker({position: new google.maps.LatLng(45.507189, -73.587411), map: map, title: "Montreal"});
+  var quebeccity = new google.maps.Marker({position: new google.maps.LatLng(46.807836, -71.206894), map: map, title: "Quebec City"});
+  var halifax = new google.maps.Marker({position: new google.maps.LatLng(44.647517, -63.579606), map: map, title: "Halifax"});
+  
+  var la = new google.maps.Marker({position: {lat: 34.102263, lng: -118.340885}, map: map, title: "LA"});
+  var miami = new google.maps.Marker({position: {lat: 25.761225, lng: -80.190835}, map: map, title: "Miami"});
+  var phoenix = new google.maps.Marker({position: {lat: 33.451697, lng: -112.067400}, map: map, title: "Phoenix"});
+  var deathvalley = new google.maps.Marker({position: new google.maps.LatLng(36.464078, -116.866939), map: map, title: "Death Valley"});
+  var grandcanyon = new google.maps.Marker({position: new google.maps.LatLng(36.198492, -112.052491), map: map, title: "Grand Canyon North Rim"});
+  var keywest = new google.maps.Marker({position: new google.maps.LatLng(24.545593, -81.810984), map: map, title: "Key West"});
+
+  var cayman = new google.maps.Marker({position: new google.maps.LatLng(19.333977, -81.381708), map: map, title: "Cayman Islands"});
+
+  var london = new google.maps.Marker({position: {lat: 51.500921, lng: -0.124597}, map: map, title: "London"});
+  var rome = new google.maps.Marker({position: new google.maps.LatLng(41.898764, 12.476854), map: map, title: "Rome"});
+  var florence = new google.maps.Marker({position: new google.maps.LatLng(43.767873, 11.255270), map: map, title: "Florence"});
+  var pisa = new google.maps.Marker({position: new google.maps.LatLng(43.722991, 10.396608), map: map, title: "Pisa"});
+  var venice = new google.maps.Marker({position: new google.maps.LatLng(45.433378, 12.330536), map: map, title: "Venice"});
+
+  var tianjin = new google.maps.Marker({position: new google.maps.LatLng(39.356563, 117.366918), map: map, title: "天津 Tianjin"});
+  var beijin = new google.maps.Marker({position: new google.maps.LatLng(39.917202, 116.390720), map: map, title: "北京 Beijing"});
+  var shanghai = new google.maps.Marker({position: new google.maps.LatLng(31.227581, 121.492112), map: map, title: "上海 Shanghai"});
+  var huangyan = new google.maps.Marker({position: new google.maps.LatLng(28.654936, 121.261414), map: map, title: "黄岩 Huangyan"});
+  var dachendao = new google.maps.Marker({position: new google.maps.LatLng(28.486729, 121.899577), map: map, title: "大陈岛 Dachen Island"});
+  var shantou = new google.maps.Marker({position: new google.maps.LatLng(23.366640, 116.717828), map: map, title: "汕头 Shantou"});
+  var shenzhen = new google.maps.Marker({position: new google.maps.LatLng(22.534577, 113.986063), map: map, title: "深圳 Shenzhen"});
+  
+  var bangkok = new google.maps.Marker({position: new google.maps.LatLng(13.752404, 100.490916), map: map, title: "Bangkok"});
+  
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfar_EwL-4gtpLPlIo74_PJvPnSxpoOXI&callback=initMap">
+    </script>
+  </body>
+</html>
